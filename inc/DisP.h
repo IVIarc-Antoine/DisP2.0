@@ -301,7 +301,7 @@ void cmd_logo(void);
 #define REG_CMDB_WRITE 			RAM_REG + 0x578
 
 /***Registres du touch screen résistif (RTE)***/
-
+/*
 #define REG_TOUCH_CONFIG		RAM_REG + 0x168
 #define REG_TOUCH_TRANSFORM_F	RAM_REG + 0x164
 #define REG_TOUCH_TRANSFORM_E	RAM_REG + 0x160
@@ -323,7 +323,7 @@ void cmd_logo(void);
 #define REG_TOUCH_ADC_MODE		RAM_REG + 0x108
 #define REG_TOUCH_MODE			RAM_REG + 0x104
 
-
+*/
 
 
 /***Special Registers***/

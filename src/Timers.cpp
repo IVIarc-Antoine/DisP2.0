@@ -21,8 +21,23 @@ void Sleep(uint32_t ms)
 {
 	uint32_t timeOut = STRELOAD;
 
+	ST_TIMEOUT(ms*10);
 
-	for(uint16_t i = 0;i<(ms/174);i++)
+	SB(0,STCTRL);
+	//STCURR = 0;
+	for(unsigned int i = 0;i<ms;i++)
+	{
+		while(!(TB(16,STCTRL)));
+		//STCURR = 0;
+	}
+	CB(0,STCTRL);
+	//STCURR = 0;
+	STRELOAD = timeOut;
+
+
+
+
+	/*for(uint16_t i = 0;i<(ms/174);i++)
 	{
 		ST_TIMEOUT(174*1000);
 		//STCURR = 0;
@@ -33,9 +48,9 @@ void Sleep(uint32_t ms)
 			while(!(TB(16,STCTRL)));
 			//STCURR = 0;
 		}
-		CB(0,STCTRL);
+		//CB(0,STCTRL);
 		//STCURR = 0;
-		STRELOAD = timeOut;
+		//STRELOAD = timeOut;
 	}
 
 	ST_TIMEOUT((ms%174)*1000);
@@ -50,7 +65,7 @@ void Sleep(uint32_t ms)
 	//STCURR = 0;
 	STRELOAD = timeOut;
 
-
+*/
 }
 void ST_TIMEOUT(uint32_t tMicroSeconds)
 {
@@ -59,16 +74,10 @@ void ST_TIMEOUT(uint32_t tMicroSeconds)
 void Init_RIT(void)
 {
 
-
-
-
 	SetBit(16,PCONP);
 	I2B(PCLKSEL1, 26,0);          //24MHz à la sortie du MUX
 	RI_TIMER_COMPVAL = 15000;	  //1ms de délais
 	RI_TIMER_CTRL = 0x0A;		  //Activer le RIT + RAZ du timer counter
-
-
-
 }
 
 void Init_TMR0(void)

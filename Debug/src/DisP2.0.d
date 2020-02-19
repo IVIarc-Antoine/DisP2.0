@@ -52,8 +52,7 @@ src/DisP2.0.o src/DisP2.0.d: ../src/DisP2.0.cpp \
  C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/LCD.h \
  C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/RTC.h \
  C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/I2C.h \
- C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/DisP.h \
- C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/MPU9250.h
+ C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/DisP.h
 
 C:\Users\Marc-Antoine\Desktop\Session_Automne_2019\516_Processeurs_Embarques\MCUXpresso\lpc_chip_175x_6x\inc/chip.h:
 
@@ -162,5 +161,3 @@ C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\in
 C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/I2C.h:
 
 C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/DisP.h:
-
-C:\Users\Marc-Antoine\Desktop\SessionHiver2020\61D_Projet_Integrateur\DisP2.0\inc/MPU9250.h:

@@ -26,6 +26,7 @@ typedef enum{
 
 void Init_SPI(void);
 void SPI_Send(unsigned char* tx, int L, SPI_Target Dest);
+uint8_t SPIReadWrite(uint8_t Data);
 
 
 

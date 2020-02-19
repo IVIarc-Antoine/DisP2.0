@@ -14,6 +14,7 @@ CPP_SRCS += \
 ../src/MadgwickFilter.cpp \
 ../src/PinsConfig.cpp \
 ../src/RTC.cpp \
+../src/SD.cpp \
 ../src/SPI.cpp \
 ../src/Timers.cpp \
 ../src/cr_cpp_config.cpp \
@@ -35,6 +36,7 @@ OBJS += \
 ./src/MadgwickFilter.o \
 ./src/PinsConfig.o \
 ./src/RTC.o \
+./src/SD.o \
 ./src/SPI.o \
 ./src/Timers.o \
 ./src/cr_cpp_config.o \
@@ -54,6 +56,7 @@ CPP_DEPS += \
 ./src/MadgwickFilter.d \
 ./src/PinsConfig.d \
 ./src/RTC.d \
+./src/SD.d \
 ./src/SPI.d \
 ./src/Timers.d \
 ./src/cr_cpp_config.d \
